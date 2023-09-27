@@ -30,15 +30,47 @@ const myArray2 = new Array (1,2,3,4)
 
 // Slice , Splice
 
-console.log("A", MyArray);
+// console.log("A", MyArray);
 
-const myn1 = MyArray.slice(1,3) // Last range Include ni hoti only 1 and 2
-console.log(myn1);
+// const myn1 = MyArray.slice(1,3) // Last range Include ni hoti only 1 and 2
+// console.log(myn1);
 
-console.log("B", MyArray);  // slice original array ki value change ni krta.
+// console.log("B", MyArray);  // slice original array ki value change ni krta.
 
-const myn2 = MyArray.splice(1,3) // Last Range Include krta hai like 1,2,3. 
+// const myn2 = MyArray.splice(1,3) // Last Range Include krta hai like 1,2,3. 
 
-console.log("C", MyArray); // splice original array ki value change krdaita hai.
-console.log(myn2);
+// console.log("C", MyArray); // splice original array ki value change krdaita hai.
+// console.log(myn2);
+
+
+
+const marvel_heros = ["thor","Ironman","spiderman"]
+const dc_heros = ["superman","flash","batman"]
+
+
+// marvel_heros.push(dc_heros)  .push Existing array me he push krta hai value.
+// console.log(marvel_heros);
+
+// const Allheros = marvel_heros.concat(dc_heros)  //.concat New array me Value concat krta hai.
+// console.log(Allheros);
+
+
+// const All_Heros = [...marvel_heros , ...dc_heros] //Spread Operator Glass pick and Brake like Example
+// console.log(All_Heros);
+
+// const anotherArray = [1,2,3,[4,5,6],7,[8, 9,[10,11],12]] 
+
+// const real_Another_Array = anotherArray.flat(Infinity) // .flat standardrize krdaita sequence me chaye uskay under jitnay b array q na houn Like spreadout.
+// console.log(real_Another_Array);
+
+// console.log(Array.isArray("waqas"));
+// console.log(Array.from("waqas")); // Convert to Array Data Scrapping example
+// console.log(Array.from({name:"waqas"})); // interesting
+
+let score1 = 100;
+let score2 = 200;
+let score3 = 300;
+
+console.log(Array.of(score1,score2,score3)); //Print 3 Variables Values using .of
+
 
