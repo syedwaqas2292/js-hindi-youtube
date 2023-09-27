@@ -7,6 +7,38 @@ const MyHeros = ["Babar Azam" , "Shahid Afridi"]
 const myArray2 = new Array (1,2,3,4)
 
 
-console.log(MyArray[3]);
-console.log(MyHeros);
-console.log(myArray2);
+// console.log(MyArray[3]);
+// console.log(MyHeros);
+// console.log(myArray2);
+
+
+// Array Methods
+
+// MyArray.push(6) // Add Value in Array Last
+// MyArray.pop() // Removes End value in Array.
+// MyArray.unshift(8) // Add starting of array.
+    // MyArray.shift() //  unshift add starting value Remove in array 
+
+// console.log(MyArray.includes(9)); // Includes boolean Value batata hai.
+// console.log(MyArray.indexOf(8)); // Index of Array ki Indexing batata hai like 0 or 1.
+
+
+// const newArray = MyArray.join(); // Array.join bind be karta hai r String me Convert Kardaita hai array ko 
+
+// console.log(MyArray);
+// console.log(typeof newArray);
+
+// Slice , Splice
+
+console.log("A", MyArray);
+
+const myn1 = MyArray.slice(1,3) // Last range Include ni hoti only 1 and 2
+console.log(myn1);
+
+console.log("B", MyArray);  // slice original array ki value change ni krta.
+
+const myn2 = MyArray.splice(1,3) // Last Range Include krta hai like 1,2,3. 
+
+console.log("C", MyArray); // splice original array ki value change krdaita hai.
+console.log(myn2);
+
